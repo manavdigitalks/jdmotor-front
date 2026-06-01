@@ -856,9 +856,13 @@ export default function ReportViewPage() {
           body{background:#fff;padding:0;margin:0;}
           .no-print{display:none!important;}
           .report-page{
-            width:100%!important;margin:0!important;box-shadow:none!important;
-            padding:20px 28px 40px!important;min-height:auto!important;
-            page-break-after:always;break-after:page;
+            width: 794px !important;
+            height: 1123px !important;
+            margin: 0 auto !important;
+            box-shadow: none !important;
+            padding: 28px 40px 50px !important;
+            page-break-after: always;
+            break-after: page;
           }
           .report-page:last-child{page-break-after:avoid;break-after:avoid;}
           @page{size:A4;margin:0;}

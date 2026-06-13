@@ -50,7 +50,6 @@ export default function AllDataPage() {
     setLoading(true);
     try {
       const res = await api.get(`/car-inspections?page=${p}&limit=10`);
-console.log("API Response:", res.data);
       const responseData =
         res.data?.data?.docs ??
         res.data?.docs ??

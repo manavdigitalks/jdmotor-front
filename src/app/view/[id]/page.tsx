@@ -613,8 +613,6 @@ export default function ReportViewPage() {
   const { id } = useParams();
   const [d, setD] = useState<any>(null);
   const [loading, setLoading] = useState(true);
-console.log("dddd",d);
-
   useEffect(() => {
     if (!id) return;
     getInspectionById(id as string)

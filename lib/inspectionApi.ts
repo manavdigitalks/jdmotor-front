@@ -308,7 +308,6 @@ export const updateSection1 = async (
 //   return res.data.data.car_summary_ownership as { car_image: string };
 // };
 export const updateSection2 = async (id: string, data: FormData) => {
-  console.log("updateSection2 called", id, data);
   const fd = buildSection2FormData(data);
   const res = await api.put(
     `/car-inspections/${id}`,
